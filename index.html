@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World Color Changer</title>
     <style>
+        /* CSS Styles */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -20,9 +21,13 @@
     <h1 id="hello-world" onclick="changeColor()">Hello World</h1>
 
     <script>
+        // JavaScript Code
         function changeColor() {
             // Generate a random color
             const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
             // Change the color of the text
-            document.get
-
+            document.getElementById('hello-world').style.color = randomColor;
+        }
+    </script>
+</body>
+</html>
