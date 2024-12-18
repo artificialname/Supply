@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            cursor: pointer;
+            transition: color 0.3s ease; /* Smooth color change */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hello-world" onclick="changeColor()">Hello World</h1>
+
+    <script>
+        function changeColor() {
+            // Generate a random color
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            // Change the color of the text
+            document.get
 
